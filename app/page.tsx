@@ -1,10 +1,11 @@
 import Hero from '@/components/Hero'
 import BrandPhilosophy from '@/components/BrandPhilosophy'
+import FeaturedCollections from '@/components/FeaturedCollections'
 import ScrollReveal from '@/components/ScrollReveal'
 import SectionDivider from '@/components/SectionDivider'
 import ProductCard from '@/components/ProductCard'
 import Materials from '@/components/Materials'
-import { collections, products } from '@/lib/mock-data'
+import { products } from '@/lib/mock-data'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -25,39 +26,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Featured Collections */}
-      <section className="bg-ivory-dark px-8 py-[60px] md:py-[120px]">
-        <div className="mx-auto max-w-[1400px]">
-          <ScrollReveal>
-            <h2 className="text-center font-cormorant text-[clamp(36px,5vw,64px)] font-light tracking-heading text-charcoal">
-              Collections
-            </h2>
-          </ScrollReveal>
-
-          <div className="mt-16 grid gap-10 md:grid-cols-3">
-            {collections.map((collection, i) => (
-              <ScrollReveal key={collection.id} delay={i * 0.15}>
-                <Link href={`/catalog?category=${collection.slug}`} className="group block">
-                  <div className="relative aspect-[4/5] overflow-hidden">
-                    <Image
-                      src={collection.image}
-                      alt={collection.name}
-                      fill
-                      className="object-cover transition-transform duration-[600ms] ease-in-out group-hover:scale-[1.03]"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  </div>
-                  <h3 className="mt-4 font-cormorant text-2xl font-normal text-charcoal">
-                    {collection.name}
-                  </h3>
-                  <p className="mt-2 font-raleway text-sm font-light leading-relaxed text-charcoal-soft">
-                    {collection.description}
-                  </p>
-                </Link>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FeaturedCollections />
 
       <SectionDivider color="brass" />
 
