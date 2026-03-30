@@ -6,7 +6,8 @@
       "Read(//tmp/**)",
       "Bash(cd:*)",
       "Bash(npm init:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(node:*)"
     ]
   }
 }
