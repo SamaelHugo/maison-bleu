@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { ShoppingBag, Search, Menu, X } from 'lucide-react'
 import { useCartStore } from '@/lib/store'
@@ -13,6 +14,8 @@ const navLinks = [
 ]
 
 export default function Header() {
+  const pathname = usePathname()
+  const isHome = pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const totalItems = useCartStore((state) => state.totalItems)
@@ -33,16 +36,20 @@ export default function Header() {
     }
   }, [mobileOpen])
 
-  const textColor = scrolled ? 'var(--charcoal)' : 'var(--ivory)'
+  // On homepage: ivory text over hero, charcoal after scroll
+  // On inner pages: always charcoal
+  const textColor = !isHome || scrolled ? 'var(--charcoal)' : 'var(--ivory)'
+  const headerBg = !isHome || scrolled ? 'var(--ivory)' : 'transparent'
+  const borderColor = !isHome || scrolled ? 'var(--blue-light)' : 'transparent'
 
   return (
     <>
       <header
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-[400ms] ease-in-out"
         style={{
-          backgroundColor: scrolled ? 'var(--ivory)' : 'transparent',
+          backgroundColor: headerBg,
           borderBottom: '1px solid',
-          borderBottomColor: scrolled ? 'var(--blue-light)' : 'transparent',
+          borderBottomColor: borderColor,
         }}
       >
         <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-8 py-5">
