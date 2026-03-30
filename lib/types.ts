@@ -4,6 +4,7 @@ export interface Product {
   name: string
   price: number
   category: string
+  collection: string
   description: string
   materials: string[]
   dimensions: string

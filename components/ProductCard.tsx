@@ -17,10 +17,13 @@ export default function ProductCard({ product }: { product: Product }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <h3 className="mt-4 font-cormorant text-2xl font-normal text-charcoal">
+      <p className="mt-4 font-raleway text-xs font-normal uppercase tracking-nav text-stone">
+        {product.collection}
+      </p>
+      <h3 className="mt-1 font-cormorant text-[22px] font-normal text-charcoal">
         {product.name}
       </h3>
-      <p className="mt-1 font-raleway text-sm font-light text-stone">
+      <p className="mt-1 font-raleway text-[15px] font-light text-charcoal">
         {formatPrice(product.price)}
       </p>
     </Link>
