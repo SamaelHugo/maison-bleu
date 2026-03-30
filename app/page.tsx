@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import BrandPhilosophy from '@/components/BrandPhilosophy'
 import FeaturedCollections from '@/components/FeaturedCollections'
+import Workshop from '@/components/Workshop'
 import ScrollReveal from '@/components/ScrollReveal'
 import SectionDivider from '@/components/SectionDivider'
 import ProductCard from '@/components/ProductCard'
@@ -28,43 +29,8 @@ export default function HomePage() {
       {/* Featured Collections */}
       <FeaturedCollections />
 
-      <SectionDivider color="brass" />
-
       {/* Workshop */}
-      <section className="bg-ivory px-8 py-[60px] md:py-[120px]">
-        <div className="mx-auto grid max-w-[1400px] items-center gap-16 md:grid-cols-2">
-          <ScrollReveal>
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
-                alt="Atelier Maison Bleu"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={0.15}>
-            <div className="max-w-text">
-              <h2 className="font-cormorant text-[clamp(36px,5vw,56px)] font-light tracking-heading text-charcoal">
-                Notre Atelier
-              </h2>
-              <p className="mt-6 font-raleway text-base font-light leading-[1.7] text-charcoal-soft md:text-lg">
-                Dans notre atelier du sud de la France, chaque meuble prend forme
-                sous les mains de nos artisans. Le temps est notre allie, jamais
-                notre contrainte. Nous choisissons nos bois un par un, nous ajustons
-                chaque assemblage a la main.
-              </p>
-              <Link
-                href="/about"
-                className="mt-8 inline-block border border-charcoal px-12 py-4 font-raleway text-xs font-normal uppercase tracking-button text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
-              >
-                Decouvrir
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <Workshop />
 
       <SectionDivider />
 
