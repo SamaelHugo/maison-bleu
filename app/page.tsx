@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import BrandPhilosophy from '@/components/BrandPhilosophy'
 import ScrollReveal from '@/components/ScrollReveal'
 import SectionDivider from '@/components/SectionDivider'
 import ProductCard from '@/components/ProductCard'
@@ -19,23 +20,7 @@ export default function HomePage() {
       />
 
       {/* Brand Philosophy */}
-      <section className="bg-ivory px-8 py-[60px] md:py-[120px]">
-        <div className="mx-auto max-w-[1400px]">
-          <ScrollReveal>
-            <div className="mx-auto max-w-text text-center">
-              <h2 className="font-cormorant text-[clamp(36px,5vw,64px)] font-light tracking-heading text-charcoal">
-                L&apos;art du meuble
-              </h2>
-              <p className="mt-8 font-raleway text-base font-light leading-[1.7] text-charcoal-soft md:text-lg">
-                Chaque piece est concue dans notre atelier en France, faconnee a la main
-                a partir de bois massif, de pierre naturelle et de textiles d&apos;exception.
-                Nous ne fabriquons pas de meubles en serie. Nous construisons des objets
-                qui traversent les generations.
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <BrandPhilosophy />
 
       <SectionDivider />
 
