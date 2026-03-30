@@ -3,24 +3,24 @@ import { Product, Collection } from './types'
 export const collections: Collection[] = [
   {
     id: '1',
-    name: 'Cuisine',
-    description: 'Kitchens shaped by hand, defined by use. Solid wood frames, natural stone surfaces, hardware forged in small batches.',
+    name: 'Cuisines',
+    description: 'Cuisines faconnees a la main, definies par l\'usage. Cadres en bois massif, plans de travail en pierre naturelle, quincaillerie forgee en petites series.',
     image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
     slug: 'cuisine',
   },
   {
     id: '2',
-    name: 'Salle a Manger',
-    description: 'Tables and chairs built for long evenings. Oak, walnut, and ash, joined without haste.',
+    name: 'Salle \u00e0 Manger',
+    description: 'Tables et chaises construites pour les longues soirees. Chene, noyer et frene, assembles sans precipitation.',
     image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
     slug: 'salle-a-manger',
   },
   {
     id: '3',
-    name: 'Salon',
-    description: 'Living room pieces that settle into a home quietly. Linen, leather, and timber in measured proportions.',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
-    slug: 'salon',
+    name: 'Cabinets',
+    description: 'Bureaux et bibliotheques en bois noble. Des pieces de travail pensees pour le calme et la concentration.',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+    slug: 'cabinets',
   },
 ]
 

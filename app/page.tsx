@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import ScrollReveal from '@/components/ScrollReveal'
 import SectionDivider from '@/components/SectionDivider'
 import ProductCard from '@/components/ProductCard'
+import Materials from '@/components/Materials'
 import { collections, products } from '@/lib/mock-data'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,13 +13,13 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Maison Bleu"
-        subtitle="Mobilier artisanal francais"
+        title="L&#39;art de vivre"
+        subtitle="Mobilier artisanal depuis 1987"
         image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1600&q=80"
       />
 
       {/* Brand Philosophy */}
-      <section className="bg-ivory px-8 py-[120px] md:py-[120px] py-[60px]">
+      <section className="bg-ivory px-8 py-[60px] md:py-[120px]">
         <div className="mx-auto max-w-[1400px]">
           <ScrollReveal>
             <div className="mx-auto max-w-text text-center">
@@ -39,7 +40,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Featured Collections */}
-      <section className="bg-ivory-dark px-8 py-[120px] md:py-[120px] py-[60px]">
+      <section className="bg-ivory-dark px-8 py-[60px] md:py-[120px]">
         <div className="mx-auto max-w-[1400px]">
           <ScrollReveal>
             <h2 className="text-center font-cormorant text-[clamp(36px,5vw,64px)] font-light tracking-heading text-charcoal">
@@ -76,7 +77,7 @@ export default function HomePage() {
       <SectionDivider color="brass" />
 
       {/* Workshop */}
-      <section className="bg-ivory px-8 py-[120px] md:py-[120px] py-[60px]">
+      <section className="bg-ivory px-8 py-[60px] md:py-[120px]">
         <div className="mx-auto grid max-w-[1400px] items-center gap-16 md:grid-cols-2">
           <ScrollReveal>
             <div className="relative aspect-[4/3] overflow-hidden">
@@ -113,8 +114,13 @@ export default function HomePage() {
 
       <SectionDivider />
 
+      {/* Materials */}
+      <Materials />
+
+      <SectionDivider color="brass" />
+
       {/* Featured Products */}
-      <section className="bg-ivory-dark px-8 py-[120px] md:py-[120px] py-[60px]">
+      <section className="bg-ivory-dark px-8 py-[60px] md:py-[120px]">
         <div className="mx-auto max-w-[1400px]">
           <ScrollReveal>
             <h2 className="text-center font-cormorant text-[clamp(36px,5vw,64px)] font-light tracking-heading text-charcoal">
@@ -134,7 +140,7 @@ export default function HomePage() {
             <div className="mt-16 text-center">
               <Link
                 href="/catalog"
-                className="inline-block bg-blue-deep px-12 py-4 font-raleway text-xs font-normal uppercase tracking-button text-ivory transition-colors hover:bg-blue-muted"
+                className="inline-block border border-charcoal px-12 py-4 font-raleway text-xs font-normal uppercase tracking-button text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
               >
                 Voir toutes les collections
               </Link>

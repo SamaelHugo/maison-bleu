@@ -18,7 +18,7 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(to top, rgba(44,44,44,0.4) 0%, transparent 50%)',
+          background: 'linear-gradient(to top, rgba(44,44,44,0.5) 0%, rgba(44,44,44,0.2) 50%, transparent 100%)',
         }}
       />
 
@@ -50,7 +50,7 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
       >
         <div className="h-10 w-px bg-ivory/50" />
         <span className="font-raleway text-[11px] uppercase tracking-nav text-ivory/60">
-          Defiler
+          D&eacute;couvrir
         </span>
       </motion.div>
     </section>
