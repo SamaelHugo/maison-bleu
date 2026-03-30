@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --blue-deep: #2B5A8C;
+  --blue-muted: #4A7BAD;
+  --blue-light: #D6E4EF;
+
+  /* Neutrals */
+  --ivory: #FAF7F2;
+  --ivory-dark: #F0EBE3;
+  --stone: #B8AFA5;
+  --charcoal: #2C2C2C;
+  --charcoal-soft: #4A4A4A;
+
+  /* Accents */
+  --brass: #C9A84C;
+  --brass-light: #DFC67A;
+  --marble-white: #F5F0EC;
+  --oak: #8B6F47;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--font-raleway);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background-color: var(--blue-light);
+  color: var(--charcoal);
+}

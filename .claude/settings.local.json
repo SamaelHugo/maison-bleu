@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx:*)",
+      "Bash(mkdir -p /tmp/maison-bleu-init)",
+      "Read(//tmp/**)",
+      "Bash(cd:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
