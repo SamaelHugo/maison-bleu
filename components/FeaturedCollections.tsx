@@ -52,7 +52,7 @@ export default function FeaturedCollections() {
           viewport={{ once: true, amount: 0.2 }}
           className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3"
         >
-          {collections.map((collection) => (
+          {collections.slice(0, 3).map((collection) => (
             <motion.div key={collection.id} variants={cardVariants}>
               <Link
                 href={`/catalog?category=${collection.slug}`}

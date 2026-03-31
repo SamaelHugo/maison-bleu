@@ -3,23 +3,23 @@ import { Product, Collection } from './types'
 export const collections: Collection[] = [
   {
     id: '1',
-    name: 'Kitchens',
+    name: 'Cuisines',
     description: 'Kitchens shaped by hand, defined by use. Solid wood frames, natural stone surfaces, hardware forged in small batches.',
-    image: 'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
     slug: 'kitchens',
   },
   {
     id: '2',
-    name: 'Dining',
+    name: 'Salle à Manger',
     description: 'Tables and chairs built for long evenings. Oak, walnut, and ash, joined without haste.',
-    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80',
     slug: 'dining',
   },
   {
     id: '3',
-    name: 'Studies',
+    name: 'Cabinets',
     description: 'Desks and shelving in noble wood. Workspaces designed for calm and concentration.',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80',
     slug: 'studies',
   },
   {
