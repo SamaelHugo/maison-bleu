@@ -1,11 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { ShoppingBag, Search, Menu, X } from 'lucide-react'
 import { useCartStore } from '@/lib/store'
+import CartDrawer from '@/components/CartDrawer'
+import CartToast from '@/components/CartToast'
 
 const navLinks = [
   { href: '/catalog', label: 'Collections' },
@@ -18,8 +20,22 @@ export default function Header() {
   const isHome = pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const totalItems = useCartStore((state) => state.totalItems)
+  const [cartOpen, setCartOpen] = useState(false)
+  const [cartBounce, setCartBounce] = useState(false)
+  const items = useCartStore((state) => state.items)
+  const itemCount = items.reduce((sum, item) => sum + item.quantity, 0)
+  const prevCountRef = useRef(itemCount)
   const { scrollY } = useScroll()
+
+  // Bounce the cart icon when item count increases
+  useEffect(() => {
+    if (itemCount > prevCountRef.current) {
+      setCartBounce(true)
+      const timer = setTimeout(() => setCartBounce(false), 300)
+      return () => clearTimeout(timer)
+    }
+    prevCountRef.current = itemCount
+  }, [itemCount])
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     setScrolled(latest > 50)
@@ -87,16 +103,24 @@ export default function Header() {
               />
             </button>
 
-            <button className="relative" aria-label="Panier">
+            <button
+              className="relative"
+              aria-label="Panier"
+              onClick={() => setCartOpen(true)}
+              style={{
+                transform: cartBounce ? 'scale(1.2)' : 'scale(1)',
+                transition: 'transform 0.3s ease',
+              }}
+            >
               <ShoppingBag
                 size={18}
                 strokeWidth={1.5}
                 style={{ color: textColor }}
                 className="transition-colors duration-[400ms]"
               />
-              {totalItems() > 0 && (
+              {itemCount > 0 && (
                 <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brass font-raleway text-[10px] text-ivory">
-                  {totalItems()}
+                  {itemCount}
                 </span>
               )}
             </button>
@@ -135,6 +159,12 @@ export default function Header() {
           ))}
         </div>
       )}
+
+      {/* Cart drawer */}
+      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
+
+      {/* Cart toast */}
+      <CartToast />
     </>
   )
 }

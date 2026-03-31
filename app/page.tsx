@@ -18,7 +18,7 @@ export default function HomePage() {
       <Hero
         title="L&#39;art de vivre"
         subtitle="Mobilier artisanal depuis 1987"
-        image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1600&q=80"
+        image="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80"
       />
 
       {/* Brand Philosophy */}

@@ -6,23 +6,23 @@ import { TreePine, Diamond, Lamp, Coffee } from 'lucide-react'
 const materials = [
   {
     icon: TreePine,
-    name: 'Oak',
-    description: 'French solid oak, air-dried for two years before it enters our workshop. Dense, stable, and rich with character.',
+    name: 'Chêne',
+    description: 'Chêne massif français, séché à l\u2019air pendant deux ans avant d\u2019entrer dans notre atelier. Dense, stable et riche de caractère.',
   },
   {
     icon: Diamond,
-    name: 'Marble',
-    description: 'Natural stone quarried in Burgundy, hand-polished to reveal its unique veining. Cool to the touch, warm in tone.',
+    name: 'Marbre',
+    description: 'Pierre naturelle extraite en Bourgogne, polie à la main pour révéler ses veinures uniques. Froide au toucher, chaleureuse de ton.',
   },
   {
     icon: Lamp,
-    name: 'Brass',
-    description: 'Forged by our metalworkers, each fitting develops a living patina over time. Never lacquered, always honest.',
+    name: 'Laiton',
+    description: 'Forgé par nos métallurgistes, chaque pièce développe une patine vivante avec le temps. Jamais laqué, toujours honnête.',
   },
   {
     icon: Coffee,
-    name: 'Ceramic',
-    description: 'Shaped and glazed in the kilns of Provence. Every tile carries the trace of the hand that made it.',
+    name: 'Céramique',
+    description: 'Façonnée et émaillée dans les fours de Provence. Chaque carreau porte la trace de la main qui l\u2019a créé.',
   },
 ]
 
@@ -60,10 +60,10 @@ export default function Materials() {
           className="text-center"
         >
           <h2 className="font-cormorant text-[52px] font-light tracking-heading text-ivory">
-            Materials
+            Matériaux
           </h2>
           <p className="mt-4 font-raleway text-sm font-light text-blue-light">
-            Hand-selected, time-tested
+            Sélectionnés à la main, éprouvés par le temps
           </p>
         </motion.div>
 

@@ -18,7 +18,7 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
       <div
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(to top, rgba(44,44,44,0.4) 0%, transparent 50%)',
+          background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.15) 100%)',
         }}
       />
 
@@ -36,7 +36,8 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6, ease: 'easeOut' }}
-          className="mt-6 font-raleway text-[13px] font-light uppercase tracking-sub text-ivory/85"
+          className="mt-6 font-raleway text-[13px] font-light uppercase tracking-sub"
+          style={{ color: '#FFFFFF', textShadow: '0 1px 8px rgba(0,0,0,0.5)' }}
         >
           {subtitle}
         </motion.p>
@@ -46,11 +47,19 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.2, ease: 'easeOut' }}
-        className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
+        className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
       >
-        <div className="h-10 w-px bg-ivory/50" />
-        <span className="font-raleway text-[11px] uppercase tracking-nav text-ivory/60">
-          D&eacute;couvrir
+        <motion.div
+          animate={{ y: [0, 8, 0], opacity: [0.6, 1, 0.6] }}
+          transition={{ duration: 2, ease: 'easeInOut', repeat: Infinity }}
+          className="h-10 w-px"
+          style={{ backgroundColor: '#FFFFFF', boxShadow: '0 1px 6px rgba(0,0,0,0.5)' }}
+        />
+        <span
+          className="font-raleway text-[11px] uppercase tracking-[0.15em]"
+          style={{ color: '#FFFFFF', textShadow: '0 1px 6px rgba(0,0,0,0.5)' }}
+        >
+          Découvrir
         </span>
       </motion.div>
     </section>

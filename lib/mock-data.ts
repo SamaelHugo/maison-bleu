@@ -5,7 +5,7 @@ export const collections: Collection[] = [
     id: '1',
     name: 'Kitchens',
     description: 'Kitchens shaped by hand, defined by use. Solid wood frames, natural stone surfaces, hardware forged in small batches.',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80',
     slug: 'kitchens',
   },
   {
@@ -26,7 +26,7 @@ export const collections: Collection[] = [
     id: '4',
     name: 'Accessories',
     description: 'Objects that complete a room. Mirrors, lighting, and small furnishings crafted with the same care as the furniture they accompany.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80',
     slug: 'accessories',
   },
 ]
@@ -43,11 +43,11 @@ export const products: Product[] = [
     description: 'A complete kitchen in brushed oak with honed limestone countertops. Every cabinet is built to order in our atelier.',
     materials: ['Brushed oak', 'Honed limestone', 'Brass fittings'],
     dimensions: 'Sur mesure',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
-      'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
+      'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566753086-00f18f6b6637?w=800&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
     ],
   },
   {
@@ -60,11 +60,11 @@ export const products: Product[] = [
     description: 'A farmhouse kitchen in aged walnut with a hammered copper sink and hand-forged iron hardware. Designed for a life centred around cooking.',
     materials: ['Aged walnut', 'Hammered copper', 'Forged iron'],
     dimensions: 'Sur mesure',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
-      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-      'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
     ],
   },
   // Dining
@@ -78,12 +78,11 @@ export const products: Product[] = [
     description: 'A dining table in solid oak with hand-turned legs and a waxed finish. Seats eight comfortably. The grain of each tabletop is unique, selected for character.',
     materials: ['Solid oak', 'Natural wax finish', 'Forged iron stretchers'],
     dimensions: '220 x 100 x 76 cm',
-    image: 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
-      'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
-      'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+      'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
+      'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80',
     ],
   },
   {
@@ -96,11 +95,11 @@ export const products: Product[] = [
     description: 'A dining chair with a curved backrest in steam-bent ash. The seat is woven in natural rush by a vanniere in the Loire Valley.',
     materials: ['Steam-bent ash', 'Natural rush seat', 'Oil finish'],
     dimensions: '45 x 52 x 82 cm',
-    image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=80',
-      'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
-      'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
+      'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+      'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80',
     ],
   },
   {
@@ -113,11 +112,11 @@ export const products: Product[] = [
     description: 'A sideboard in walnut with dovetailed drawers and hand-forged brass pulls. Two doors conceal adjustable shelving.',
     materials: ['Solid walnut', 'Brass hardware', 'Beeswax finish'],
     dimensions: '180 x 45 x 90 cm',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
+      'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&q=80',
       'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
-      'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
     ],
   },
   {
@@ -130,11 +129,11 @@ export const products: Product[] = [
     description: 'A bench in solid cherry with a hand-planed seat and chamfered edges. Seats three at the table or stands alone in an entryway.',
     materials: ['Solid cherry', 'Hand-planed seat', 'Oil finish'],
     dimensions: '160 x 38 x 46 cm',
-    image: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=800&q=80',
-      'https://images.unsplash.com/photo-1503602642458-232111445657?w=800&q=80',
-      'https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=800&q=80',
+      'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80',
+      'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80',
     ],
   },
   // Studies
@@ -152,7 +151,7 @@ export const products: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
       'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
-      'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
     ],
   },
   {
@@ -169,7 +168,7 @@ export const products: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80',
       'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
-      'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
     ],
   },
   {
@@ -186,8 +185,7 @@ export const products: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
       'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800&q=80',
-      'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800&q=80',
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
     ],
   },
   // Accessories
@@ -204,8 +202,8 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80',
     images: [
       'https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80',
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
       'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80',
+      'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80',
     ],
   },
   {
@@ -218,11 +216,11 @@ export const products: Product[] = [
     description: 'A table lamp with a hand-thrown ceramic base and a natural linen shade. Each base is unique in its glaze pattern.',
     materials: ['Hand-thrown ceramic', 'Natural linen shade', 'Brass fittings'],
     dimensions: '25 x 25 x 55 cm',
-    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80',
     images: [
-      'https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=800&q=80',
+      'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80',
       'https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&q=80',
-      'https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=800&q=80',
+      'https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80',
     ],
   },
   {
