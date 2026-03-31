@@ -6,11 +6,13 @@ import ScrollReveal from '@/components/ScrollReveal'
 import SectionDivider from '@/components/SectionDivider'
 import ProductCard from '@/components/ProductCard'
 import Materials from '@/components/Materials'
-import { products } from '@/lib/mock-data'
+import { getProducts, getCollections } from '@/lib/content'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function HomePage() {
+  const products = getProducts()
+  const collections = getCollections()
   const featured = products.slice(0, 3)
 
   return (
@@ -27,7 +29,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* Featured Collections */}
-      <FeaturedCollections />
+      <FeaturedCollections collections={collections.slice(0, 3)} />
 
       {/* Workshop */}
       <Workshop />

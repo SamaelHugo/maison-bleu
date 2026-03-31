@@ -1,21 +1,22 @@
 import Image from 'next/image'
-import { products, collections } from '@/lib/mock-data'
+import { getProducts, getCollections } from '@/lib/content'
 import CatalogFilters from './CatalogFilters'
 
 export const metadata = {
   title: 'Catalog — Maison Bleu',
 }
 
-const filters = [
-  { label: 'All', slug: '' },
-  ...collections.map((c) => ({ label: c.name, slug: c.slug })),
-]
-
 export default function CatalogPage({
   searchParams,
 }: {
   searchParams: { category?: string }
 }) {
+  const products = getProducts()
+  const collections = getCollections()
+  const filters = [
+    { label: 'All', slug: '' },
+    ...collections.map((c) => ({ label: c.name, slug: c.slug })),
+  ]
   const initialCategory = searchParams.category || ''
 
   return (

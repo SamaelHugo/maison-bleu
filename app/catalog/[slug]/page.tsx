@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { products, collections } from '@/lib/mock-data'
+import { getProducts, getCollections } from '@/lib/content'
 import { formatPrice } from '@/lib/utils'
 import ScrollReveal from '@/components/ScrollReveal'
 import ProductCard from '@/components/ProductCard'
@@ -8,12 +8,14 @@ import ProductGallery from './ProductGallery'
 import ProductActions from './ProductActions'
 
 export function generateStaticParams() {
+  const products = getProducts()
   return products.map((product) => ({
     slug: product.slug,
   }))
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
+  const products = getProducts()
   const product = products.find((p) => p.slug === params.slug)
   if (!product) return { title: 'Product not found' }
   return { title: `${product.name} — Maison Bleu` }
@@ -26,6 +28,8 @@ function parseDimensions(dim: string): { width?: string; height?: string; depth?
 }
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
+  const products = getProducts()
+  const collections = getCollections()
   const product = products.find((p) => p.slug === params.slug)
   if (!product) notFound()
 

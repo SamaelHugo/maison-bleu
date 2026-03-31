@@ -1,0 +1,33 @@
+fragment ProductParts on Product {
+  __typename
+  name
+  slug
+  description
+  price
+  category
+  collection
+  image
+  images
+  materials
+  dimensions {
+    __typename
+    width
+    height
+    depth
+    raw
+  }
+}
+
+fragment Furniture_collectionParts on Furniture_collection {
+  __typename
+  name
+  slug
+  description
+  image
+}
+
+fragment PageParts on Page {
+  __typename
+  title
+  body
+}

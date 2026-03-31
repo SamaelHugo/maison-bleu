@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tina": "tinacms dev -c \"next dev\""
   },
   "keywords": [],
   "author": "",
@@ -14,11 +15,14 @@
   "description": "",
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "@tinacms/cli": "^2.2.1",
     "framer-motion": "^12.38.0",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^1.7.0",
     "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tinacms": "^3.7.1",
     "zustand": "^5.0.12"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { collections } from '@/lib/mock-data'
+import type { Collection } from '@/lib/types'
 
 const containerVariants = {
   hidden: {},
@@ -24,7 +24,7 @@ const cardVariants = {
   },
 }
 
-export default function FeaturedCollections() {
+export default function FeaturedCollections({ collections }: { collections: Collection[] }) {
   return (
     <section className="bg-ivory-dark px-8 py-[60px] md:py-[120px]">
       <div className="mx-auto max-w-[1400px]">
